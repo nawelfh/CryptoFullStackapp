@@ -1,7 +1,7 @@
 import { createTheme , ThemeProvider } from '@mui/material';
 import React from 'react';
-import { LoginForm } from './components/auth/login-form/login-form.component';
 import "./index.css";
+import { Routes } from './routes/routes';
 
 const darkTheme = createTheme({
   palette : {
@@ -11,7 +11,8 @@ const darkTheme = createTheme({
 function App() {
   return (
     <ThemeProvider theme = {darkTheme}>
-      <LoginForm/>
+      <Routes/>
+      
     </ThemeProvider>
     
   );
